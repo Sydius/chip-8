@@ -66,7 +66,7 @@ body {
   width: 276px;
   height: 416px;
 
-  background-image: url("/assets/key_map@2x.png");
+  background-image: url("assets/key_map@2x.png");
 
   background-size: 232px 416px;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ body {
   /*margin: auto;*/
   padding-top: 66px; /*position the screen*/
 
-  background-image: url("/assets/monitor_base@2x.png");
+  background-image: url("assets/monitor_base@2x.png");
 
   background-size: 486px 548px;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
   width: 38px;
   height: 64px;
 
-  background-image: url("/assets/monitor_shine_01@2x.png");
+  background-image: url("assets/monitor_shine_01@2x.png");
   background-size: 38px 64px;
   background-repeat: no-repeat;
   background-position: top left;
@@ -127,7 +127,7 @@ body {
   top: 310px;
   right: 54px;
 
-  background-image: url("/assets/monitor_shine_02@2x.png");
+  background-image: url("assets/monitor_shine_02@2x.png");
   background-size: 34px 35px;
   background-repeat: no-repeat;
   background-position: top left;
@@ -354,7 +354,7 @@ canvas {
 .volume-off {
   text-align: left;
 
-  background-image: url("/assets/monitor_button_volume_track-off@2x.png");
+  background-image: url("assets/monitor_button_volume_track-off@2x.png");
   background-size: 80px 36px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -363,7 +363,7 @@ canvas {
 .volume-on {
   text-align: right;
 
-  background-image: url("/assets/monitor_button_volume_track-on@2x.png");
+  background-image: url("assets/monitor_button_volume_track-on@2x.png");
   background-size: 80px 36px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -375,7 +375,7 @@ canvas {
   width: 36px;
   height: 36px;
 
-  background-image: url("/assets/monitor_button_volume@2x.png");
+  background-image: url("assets/monitor_button_volume@2x.png");
   background-size: 36px 36px;
   background-repeat: no-repeat;
   background-position: top center; 
@@ -442,7 +442,7 @@ canvas {
   width: 28px;
   height: 30px;
 
-  background-image: url("/assets/monitor_speed_knob@2x.png");
+  background-image: url("assets/monitor_speed_knob@2x.png");
   background-size: 28px 30px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -459,7 +459,7 @@ canvas {
   color: #D2C1AC1;
 }
 /*
-  background-image: url("/assets/monitor_button_http@2x.png");
+  background-image: url("assets/monitor_button_http@2x.png");
   background-size: 276px 36px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -469,7 +469,7 @@ canvas {
 /*
 .button-http:active {
 
-  background-image: url("/assets/monitor_button_http_pressed@2x.png");
+  background-image: url("assets/monitor_button_http_pressed@2x.png");
   background-size: 276px 36px;
   background-repeat: no-repeat;
   background-position: top center; 
@@ -508,7 +508,7 @@ input[type=text]:focus {
   height: 36px;
   margin-top: 2px;
 
-  background-image: url("/assets/monitor_button_reset@2x.png");
+  background-image: url("assets/monitor_button_reset@2x.png");
   background-size: 96px 36px;
   background-repeat: no-repeat;
   background-position: top center; 
@@ -520,7 +520,7 @@ input[type=text]:focus {
 
 #button-reset:active {
 
-  background-image: url("/assets/monitor_button_reset_pressed@2x.png");
+  background-image: url("assets/monitor_button_reset_pressed@2x.png");
   background-size: 96px 36px;
   background-repeat: no-repeat;
   background-position: top center;
