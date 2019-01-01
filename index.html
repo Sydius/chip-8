@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chip-8 VM</title>
+		<meta name="author" content="Chris Ogden & Jin Yu">
+		<meta name="description" content="Chip-8 virtual machine in a browser">
+		<meta name="keywords" content="chip-8">
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Roboto+Slab" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+
+		<div class="wrapper">
+
+				<div id="monitor" class="no-select">
+
+					<canvas tabindex="1" id="screen" width="64" height="32"></canvas>
+					<script src="chip8.js"></script>
+					<div class="monitor-shine-01"></div>
+					<div class="monitor-shine-02"></div>
+
+					<div class="button-row">
+						<div id="button-volume-track" class="volume-off">
+							<div class="button-volume"></div>
+						</div>
+						<div id="button-url">
+						</div>
+
+						<div id="button-reset"></div>
+					</div>
+					<div class="speed-row">
+						<div id="button-speed-knob"></div>
+						<div id="speed-1"></div>
+						<div id="speed-2"></div>
+						<div id="speed-3"></div>
+						<div id="speed-4"></div>
+						<div id="speed-5"></div>
+					</div>
+
+
+				</div>
+
+			<div id="gamelist">
+				<div id="back"><h4>< Back</h4></div>
+				<h3>Try these games</h3>
+				<ul>
+					<li onclick="play('https://github.com/dmatlack/chip8/blob/master/roms/games/Tetris%20%5BFran%20Dachille,%201991%5D.ch8?raw=true')">Tetris</li>
+					<li onclick="play('https://github.com/dmatlack/chip8/blob/master/roms/games/Space%20Invaders%20%5BDavid%20Winter%5D.ch8?raw=true')">Invaders</li>
+					<li onclick="play('https://github.com/dmatlack/chip8/blob/master/roms/games/Pong%20%5BPaul%20Vervalin,%201990%5D.ch8?raw=true')">Pong</li>
+					<li onclick="play('https://github.com/dmatlack/chip8/blob/master/roms/games/Guess%20%5BDavid%20Winter%5D.ch8?raw=true')">Guess</li>
+					<li onclick="play('https://github.com/dmatlack/chip8/blob/master/roms/games/Wipe%20Off%20%5BJoseph%20Weisbecker%5D.ch8?raw=true')">Wipeoff</li>
+				</ul>
+				<p><small>ROMs listed above from <br><a href="https://github.com/dmatlack/chip8/tree/master/roms">dmatlack/chip8 GitHub repository</a>.</small>
+					<br><small>CORS proxy used: <br><a href="https://cors-anywhere.herokuapp.com/">cors-anywhere.herokuapp.com</a>.</small></p>
+			</div>
+
+			<div id="keymap">
+				<h3>Keyboard mapping</h3>
+				<div class="map"></div>
+			</div>
+
+			<div id="intro">
+				<h1>CHIP-8</h1>
+				<h3>Virtual Machine<span class="line"></span></h3>
+				<p>
+					CHIP-8 is an interpreted programming language used to make early video games on the COSMAC VIP and Telmac 1800 <br>8-bit computers.
+				</p>
+				<p>
+					This is a CHIP-8 interpreter written in Rust and Web<br>Assembly, bringing these 70’s games to your browser. We made it for fun :-)
+					<a id="start">PLAY<a/>
+				</p>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>

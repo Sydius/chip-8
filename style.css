@@ -1,0 +1,529 @@
+/* -------- Main -------*/
+
+body {
+
+  background-color: #197E76;
+  color: white;
+  margin: 0;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* -------- Layout -------*/
+
+.wrapper {
+  width: 1200px;
+  height: 548px;
+  position: absolute;
+  margin: auto;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /*border: 1px solid white;*/
+}
+
+#intro {
+    width: 588px;
+    margin-top: 12em;
+    float: left;
+    bottom: 30px;
+    /*border: 1px solid red;*/
+}
+
+#gamelist {
+  display: none;
+  float: left;
+  width: 276px;
+  background-color: #197E76; /*teal*/
+  box-shadow: -24em 0em 0 24em #197E76;
+}
+
+#gamelist p {
+  line-height: 1.4em;
+  padding-right: 2em;
+}
+
+#keymap {
+  display: none;
+  float: right;
+  width: 276px;
+  height: 400px;
+  margin-top: 1.2em;
+}
+
+.map {
+  display: block;
+  width: 276px;
+  height: 416px;
+
+  background-image: url("/assets/key_map@2x.png");
+
+  background-size: 232px 416px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.line {
+  display: inline-block;
+  margin-left: 0.1em;
+  width: 8.8em;
+  height: 0.05em;
+  background-color: #EBE3D3; /*beige*/
+  /*border: 1px solid red;*/
+}
+
+/* -------- Monitor -------*/
+
+#monitor {
+  /*position: absolute;*/
+  display: block;
+  position: absolute;
+  right: 0;
+
+  width: 486px;
+  height: 548px;
+  /*margin: auto;*/
+  padding-top: 66px; /*position the screen*/
+
+  background-image: url("/assets/monitor_base@2x.png");
+
+  background-size: 486px 548px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.monitor-shine-01 {
+  display: block;
+  position: absolute;
+  top: 62px;
+  left: 52px;
+
+  width: 38px;
+  height: 64px;
+
+  background-image: url("/assets/monitor_shine_01@2x.png");
+  background-size: 38px 64px;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  opacity: 0.2;
+}
+
+.monitor-shine-02 {
+  display: block;
+  width: 34px;
+  height: 35px;
+  position: absolute;
+  top: 310px;
+  right: 54px;
+
+  background-image: url("/assets/monitor_shine_02@2x.png");
+  background-size: 34px 35px;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  opacity: 0.2;
+}
+
+/* -------- Font Style -------*/
+
+html {
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.414;
+  color: #197E76; /*teal*/
+}
+
+a {
+  color: #FFB11C;
+}
+
+p {
+  line-height: 2em;
+  letter-spacing: 0.2px;
+}
+
+h1, h2, h4, h5 {
+  margin-top: 1em;
+  line-height: 0.8;
+  color: #197E76;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+h1 {
+  font-family: 'Bungee Inline', cursive;
+  margin-bottom: 0.1em;
+  font-size: 5.656em;
+  text-shadow: 0 0.1em #14635D /*dark teal*/
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-family: 'Bungee', cursive;
+  font-size: 1.999em;
+  line-height: 1.2em;
+  margin-bottom: 0.414em;
+  color: #EBE3D3; /*beige*/
+}
+
+h4 {
+  font-family: 'Bungee', cursive;
+  font-size: 1.414em;
+}
+
+h5 {
+  font-size: 1em;
+  color: #EBE3D3; /*beige*/
+}
+
+small, .font_small {
+  font-size: 0.707em;
+}
+
+h4 a {
+  color: #FFB11C; /*yellow*/
+}
+
+ul {
+  list-style-type: none;
+  padding: 1em 3em 1em 0em;
+}
+
+ul li {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.999em;
+  letter-spacing: 0.2px;
+  color: #EBE3D3; /*beige*/
+  font-size: 1.414em;
+}
+
+ul li:active {
+  padding-left: 1em;
+}
+
+#intro h1, h4, p {
+  color: #EBE3D3; /*beige*/
+  margin-top: 0em;
+}
+
+#intro p {
+  display: inline-block;
+  float: left;
+  padding-right: 1.5em;
+
+  box-sizing: border-box;
+
+  width: 282px;
+  margin-top: 1.414em;
+}
+
+#intro h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+#start {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#keymap h3 {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  color: #197E76; /*teal*/
+}
+
+#gamelist h4 {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.414em;
+  font-weight: 700;
+}
+
+#back {
+  cursor: pointer;
+}
+
+/* -------- Animations -------*/
+
+.move {
+  -webkit-animation: move 0.5s; /* Safari 4.0 - 8.0 */
+  animation: move 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.to-beige {
+  -webkit-animation: toBeige 0.3s; /* Safari 4.0 - 8.0 */
+  animation: toBeige 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.to-teal {
+  -webkit-animation: toTeal 0.3s; /* Safari 4.0 - 8.0 */
+  animation: toTeal 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+/* Standard syntax */
+@keyframes move {
+  from {right: 0px;}
+  to {right: 357px;}
+}
+
+@keyframes toBeige {
+  from {background-color: #197E76;} /*teal*/
+  to {background-color: #EBE3D3;} /*beige*/
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes toBeige {
+  from {background-color: #197E76;} /*teal*/
+  to {background-color: #EBE3D3;} /*beige*/
+}
+
+@keyframes toTeal {
+  from {background-color: #EBE3D3;} /*beige*/
+  to {background-color: #197E76;} /*teal*/
+}
+
+/* -------- Chip-8 -------*/
+
+canvas {
+  image-rendering:optimizeSpeed;
+  image-rendering:-moz-crisp-edges;
+  image-rendering:-o-crisp-edges;
+  image-rendering:-webkit-optimize-contrast;
+  image-rendering:optimize-contrast;
+  image-rendering:crisp-edges;
+  image-rendering:pixelated;
+  -ms-interpolation-mode:nearest-neighbor;
+  width: 376px;
+  height: 282px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+/*
+  box-sizing: border-box; 
+  border: 1px solid grey;
+*/
+  
+}
+
+.button-row {
+
+  position: relative;
+  top: 36px; /*height of the volume button*/
+  left: 12px;
+}
+
+#button-volume-track {
+
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 36px;
+}
+
+.volume-off {
+  text-align: left;
+
+  background-image: url("/assets/monitor_button_volume_track-off@2x.png");
+  background-size: 80px 36px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.volume-on {
+  text-align: right;
+
+  background-image: url("/assets/monitor_button_volume_track-on@2x.png");
+  background-size: 80px 36px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.button-volume {
+
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+
+  background-image: url("/assets/monitor_button_volume@2x.png");
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: top center; 
+/*
+  box-sizing: border-box; 
+  border: 1px solid grey; 
+*/
+}
+
+.speed-row {
+  position: relative;
+  top: 52px;
+  left: 72px;
+  width: 330px;
+  height: 64px;
+}
+
+#speed-1 {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+#speed-2 {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+#speed-3 {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+#speed-4 {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+#speed-5 {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+#button-speed-knob {
+
+  position: absolute;
+  top: 8px;
+  left: 157px;
+  display: inline-block;
+  width: 28px;
+  height: 30px;
+
+  background-image: url("/assets/monitor_speed_knob@2x.png");
+  background-size: 28px 30px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+
+#button-url {
+  position: relative;
+  top: -14px;
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+
+  color: #D2C1AC1;
+}
+/*
+  background-image: url("/assets/monitor_button_http@2x.png");
+  background-size: 276px 36px;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+*/
+/*
+.button-http:active {
+
+  background-image: url("/assets/monitor_button_http_pressed@2x.png");
+  background-size: 276px 36px;
+  background-repeat: no-repeat;
+  background-position: top center; 
+
+}
+*/
+
+input[type=text] {
+  font-family: 'Roboto Slab', serif;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  color: #473C35;
+  background-color: rgba(210, 193, 172, 1.0);
+  border: 3px solid rgba(70, 50, 41, 0.5);
+  border-radius: 3px;
+  resize: none;
+
+}
+
+input[type=text]:focus {
+  background-color: #291D18;
+  color: #CCBEA3;
+
+}
+
+#button-reset {
+
+  cursor: pointer;
+  display: inline-block;
+  width: 96px;
+  height: 36px;
+  margin-top: 2px;
+
+  background-image: url("/assets/monitor_button_reset@2x.png");
+  background-size: 96px 36px;
+  background-repeat: no-repeat;
+  background-position: top center; 
+/*
+  box-sizing: border-box; 
+  border: 1px solid grey; 
+*/
+}
+
+#button-reset:active {
+
+  background-image: url("/assets/monitor_button_reset_pressed@2x.png");
+  background-size: 96px 36px;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+
